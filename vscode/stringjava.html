@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="containeer">
+        <h1>hello world</h1> 
+        
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, nostrum illo qui dolores ut illum facilis porro ex modi architecto? Adipisci dicta illum quia odit voluptas, iure omnis perferendis commodi.</p>
+        
+    </div>
+    <script>
+        var s="deeks heek";
+        var c="i am a good girl ";
+        var h="i am here ";
+        var p=`${s}`;
+        var len =s.length;
+        var pos=s.indexOf("eek");//first occurance of substring is returned
+        var t=s.lastIndexOf('eek');//last occurance at which the substring 
+        console .log(t); 
+        console .log(pos);
+        var sub=s.slice(1,7);//last index is exculusive of the interval 
+        console .log(sub);
+        var upper=s.toUpperCase(s);
+        // var con=s.concat("kiss");
+        console .log(upper);
+        s=s.concat("kiss");
+        console.log(s);
+        console.log(`${len}`);
+        console.log("lengt of string is:");
+        console.log(s+" " +c+" "+h);
+        console.log(p);
+        console .log(`hello\\\tworld\n${h}`);
+    </script>
+</body>
+</html>

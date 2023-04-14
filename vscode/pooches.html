@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width:100%;
+            position:absolute;
+            /* min-height: 100%; */
+        }
+        .backimg{
+            display:none;
+        }
+        li{
+            position:relative;
+            list-style: none;
+            text-decoration-line: none;
+            text-transform: none;
+            padding:15px 15px;
+            font-size: 20px;
+            color:black;
+        }
+        .items{
+            float:right;
+            text-decoration-line: none;
+            display:flex;
+        }
+        a{
+            text-decoration-line: none;
+        }
+        li:hover{
+            color:chocolate;
+            font-size: 25px;
+        }
+        .left ,.right{
+            position: absolute;
+            z-index:auto;
+            color: black;
+            display: flex;
+            top:50%;
+        }
+
+        .right{
+            right:15px;
+        }
+        #logo{
+            position:absolute;
+            z-index: auto;
+            width:115px;
+            height:85px;
+            padding-top: 5px;
+            display: inline-flex;
+            left:15px;
+            z-index:1;
+        }
+        .brand{
+            z-index:2;
+            position: absolute;
+            display: inline-flex;
+            left:150px;
+            padding-top:12px;
+        }
+        .navbar{
+            top:5px;
+        }
+        .oncontent{
+            position:absolute;
+            z-index:3;
+            top:115px;
+            left:55%;
+        }
+        .group {
+        display: flex;
+        line-height: 28px;
+        align-items: center;
+        position: relative;
+        max-width: 350px;
+        text-align: center;
+        top:700px;
+        left:500px;
+        padding-bottom: 50px;;
+        }
+
+        .input {
+        height: 57px;
+        line-height: 28px;
+        padding: 0 1rem;
+        width: 100%;
+        padding-left: 2.5rem;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        outline: none;
+        background-color: #E79B8F;
+        color: #0f0d2e;
+        box-shadow: 0 0 5px #ffd38d, 0 0 0 10px #ffcba1eb;
+        transition: .3s ease;
+        }
+
+        .input::placeholder {
+        color: #777;
+        font-size:large;
+        }
+        .con{
+            font-size: larger;
+        }
+        .icon {
+        position: absolute;
+        left: 1rem;
+        fill: rgb(7, 7, 7);
+        width: 1rem;
+        height: 1rem;
+        }
+        .about{
+            position :absolute;
+            z-index:auto;
+            top: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bgimage">
+        <!-- <img src="images/golret.jpeg" alt="goldenretriver" srcset=""> -->
+        <div class="container ">
+            <img class="backimg" src="images/dog4.png" alt="goldenretriver">
+            <img class="backimg" src="images/white-dog.jpg" alt="goldenretriver">
+            <img class="backimg" src="images/golret.jpeg" alt="goldenretriver">
+            <img class="backimg" src="images/dog3.png" alt="goldenretriver"> 
+            <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="right" onclick="plusDivs(+1)">&#10095;</button>
+            <div class="navbar">
+                <a href=" " class="brand"> <li id="hel">Pooches</li></a>
+                <img src="images/logo1.png" alt="logo" id="logo">
+                 <ul class="items">
+                    <!-- <a href=" " class="brand"> <li id="hello">Pooches</li></a> -->
+                    <a href=" "> <li id="hello">Gadgets</li></a>
+                    <a href=" "> <li id="hello">Clothing</li></a>
+                    <a href=" "> <li id="hello">About</li></a>
+                    <a href=" "> <li id="hello">Reachout</li></a>
+                 </ul>
+                 <div class="oncontent">
+                     <h3>pooches presents <br> Dog care</h3>
+                     <p class="con">until one has a loved dog <br>a part of ones soul remains unawakened</p>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="group">
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+            <g>
+                <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+            </g>
+        </svg>
+        <input placeholder="Search for breed" type="search" class="input">
+    </div>
+    <div class="about">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Dolorem explicabo laudantium omnis nisi soluta quia.</p>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+        showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("backimg");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+        }
+    </script>
+</body>
+</html>

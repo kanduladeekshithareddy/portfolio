@@ -1,0 +1,19 @@
+p{
+    color: white;
+    position: relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.box {
+    position:relative;
+    align-self: center;
+    margin: 142PX auto;
+    float: none; 
+    margin-bottom: 10px;
+    width:200px;
+    height:300px;
+    border-radius: 2px;
+    background:linear-gradient(#2745D9,#9845BB);
+    box-shadow: 15px 15px 30px rgb(125, 25, 25),
+             -15px -15px 30px rgb(125, 2, 152);
+
+}

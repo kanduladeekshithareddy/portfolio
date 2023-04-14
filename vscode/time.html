@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time in js</title>
+    <style>
+        #tim{
+            border:3px solid violet;
+            background-color: black;
+            color:blanchedalmond;
+            border-radius: 5px;
+            font-size: x-large;
+        }
+        #time{
+              color:cadetblue;
+              font-size: medium;
+              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <button  id ="tim" onclick="times()">time<br>
+            <!-- <span id="time"></span> -->
+        </button><br>
+        <span id="time"></span>
+        
+     </div>
+     <script>
+         function times(){
+             let btn=document.getElementById("time");
+             let btn1=document.getElementById('tim');
+                time=new Date();
+                btn.innerHTML=time;
+         }
+         setInterval(times,1000);
+     </script>
+</body>
+</html>

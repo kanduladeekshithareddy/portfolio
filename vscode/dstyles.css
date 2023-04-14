@@ -1,0 +1,43 @@
+.navbar{
+   /* background-image: url(images/dog3.png); */
+    background:black ;
+}
+.navbar ul{
+    overflow:auto;
+    /* height: 50px; */
+}
+ .navbar li{
+    float: right;
+    list-style: none;
+    text-transform: none;
+    /* padding:inherit;
+    padding-top: 16px; */
+    margin:15px 30px;
+ }
+ .navbar  li a {
+     font-size: 15px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     /* padding:3px 3px; */
+     text-decoration-line: none;
+     color:white;
+ }
+ .navbar li a:hover{
+     border-radius: 5px;
+     /* background-color:lawngreen; */
+     color:violet;
+ }
+/* .search{
+    float:right;
+    padding:12px 75px;
+}
+.navbar input{
+    border:2px solid black;
+    border-radius: 5px;
+    padding:3px;
+} */
+.img1{
+    opacity:0.9;
+    image-rendering: crisp-edges;
+    image-orientation: flip;
+    border-image: fill;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            padding:10px 13px;
+            background-color: black;
+            color:blanchedalmond;
+            border:3px solid red;
+            border-radius:5px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus consectetur animi ratione asperiores exercitationem, molestias unde veniam non in quas! Autem delectus eius asperiores voluptatem totam? Voluptatum quis, natus placeat voluptate nostrum quisquam animi consequatur. Debitis aut tenetur minima, in sed vel expedita dicta tempore rem nobis ea atque ab fugit quam delectus reiciendis sint, necessitatibus quis eveniet dignissimos quia temporibus facilis. Quo impedit rem perferendis vitae corrupti optio reiciendis repellat, unde nisi officiis dignissimos eos, nihil quae tenetur? Corporis, vero vitae repellendus sapiente mollitia labore porro expedita impedit hic aperiam eaque, ipsam odio iure maxime molestias placeat ex alias quibusdam beatae nemo. Tenetur, sit. Non nisi aliquam sequi minus cumque culpa odio ipsam maxime fuga quo eveniet aut nobis magnam illo, voluptatibus at provident possimus! Voluptas quis repudiandae repellat quam pariatur facere reprehenderit cupiditate assumenda molestiae illo, error, molestias accusantium dolores sint, autem temporibus eos eum in fugit animi reiciendis dicta vel soluta ipsa. Consequatur quae sit voluptas fuga explicabo illum, optio, in consectetur officiis alias nihil nesciunt veniam aliquam eveniet praesentium quidem magni facere recusandae unde aspernatur incidunt! Placeat, harum dolorem repellat hic eius eveniet id assumenda repudiandae consequatur. Fuga perspiciatis sequi voluptate quia repellendus provident magnam necessitatibus illo dolore mollitia autem molestiae, maxime quisquam. Voluptates corrupti, ipsum asperiores excepturi dolor sed, id esse odio, reprehenderit earum natus? Earum sunt dolor saepe magnam?</p>
+
+    </div>
+    <button id="btn" onclick="hide()">hide/show</button>
+    <script>
+        function hide(){
+            let btn=document.getElementById('btn');
+            let para=document.getElementById('para');
+            if (para.style.display!='none'){
+                para.style.display='none'; 
+            }
+            else{
+                para.style.display='block';
+            }
+        }
+    </script>
+</body>
+</html>
